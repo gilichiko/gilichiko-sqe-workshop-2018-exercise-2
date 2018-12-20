@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - 10
+  - node
+
+cache: npm
+
+script:
+  - npm install
+  - npm run test
+
+notifications:
+  email:
+    recipients:
+      - avdayan@bgu.ac.il
+    on_failure: always
